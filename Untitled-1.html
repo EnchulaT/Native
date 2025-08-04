@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>Native</title>
+    <style>
+        h1 {
+            font-size: 70px;
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            color: white;
+        }
+        .cuadrado {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .subtitulo {
+            margin-top: 120px;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-family: Georgia;
+        }
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+        video {
+            flex: 1;
+            max-width: 640px;
+            width: 100%;
+            height: auto;
+        }
+        .frase {
+            flex: 1;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Times New Roman';
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .bordeparaimagen {
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        .seccion-producto {
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+        .contenedor-pomada {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+             align-items: center;
+        }
+        .columna {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+        .nombre-pomada {
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .descripcion {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .descripcion h3,
+        .descripcion h4 {
+            color: #1a5e1a;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .boton-compra {
+            margin-top: 10px;
+            padding: 30px 60px;
+            font-size: 30px;
+            background-color: #e47230;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+           font-weight: bold;
+        }
+
+        .boton-compra:hover {
+            background-color: #2e7d32;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <h1>Native</h1>
+    </div>
+    <div class="subtitulo">
+        <p>Descubre la sabiduría de los indígenas</p>
+    </div>
+    <div class="contenedor">
+        <video controls>
+            <source src="Video indigena.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <div class="frase">
+            Cada hierba tiene una historia y una conexión con nuestros antepasados, honrar esta sabiduría es parte de nuestro proceso de sanación.
+        </div>
+    </div>
+    <section class="seccion-producto">
+        <div class="contenedor-pomada">
+            <div class="columna">
+                <div class="bordeparaimagen">
+                    <img src="Indigena.png" alt="Pomada Indígena">
+                </div>
+                <p class="nombre-pomada">Pomada Native Contra Quemaduras</p>
+            </div>
+            <div class="columna descripcion">
+                <h3>¿Cómo funciona?</h3>
+                <p>
+                    Desde tiempos inmemoriales, las comunidades ancestrales han recurrido al conocimiento 
+                    profundo de su entorno natural para tratar dolencias, cuidar la piel y promover el bienestar. 
+                    Este saber tradicional, transmitido de generación en generación, se basa en la observación 
+                    cuidadosa de las propiedades curativas de las plantas, muchas de las cuales hoy reconocemos 
+                    por contener principios activos con efectos farmacológicos comprobados.
+                </p>
+                <h4>Usa los principios de las siguientes plantas</h4>
+                <ul>
+                    <li>Caléndula (Calendula officinalis): cicatrizante y antiinflamatoria</li>
+                    <li>Ruda (Ruta graveolens): analgésica y repelente</li>
+                    <li>Guácimo (Guazuma ulmifolia): emoliente y suavizante </li>
+                    <li>Romero (Rosmarinus officinalis): antimicrobiano y estimulante </li>
+                    <li>Sábila (aloe vera): regeneradora y refrescante</li>
+                </ul>
+            </div>
+            <div class="columna espacio-boton">
+                <p style="font-size: 40px; margin-bottom: 0px;">Aquí puedes apoyar nuestra causa:</p>
+                <a href="https://www.youtube.com/watch?v=NATSpYWERIE">
+                    <button class="boton-compra">Comprar</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
